@@ -1,0 +1,490 @@
+:root {
+    --color-primary: #0069ff;
+    --color-primary-dark: #0056cc;
+    --color-text-dark: #1e1e1e;
+    --color-text-light: #6a6a6a;
+    --color-border-light: #e0e0e0;
+    --color-success: #00c600;
+    --color-feature-text: #4b4b4b;
+    --header-height: 80px;
+    --utility-height: 40px;
+    --right-panel-bg: #f8f8f8;
+    --max-content-width: 1400px;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    color: var(--color-text-dark);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+/* -------------------------------------- */
+/* Utility Header Styles (Top Bar) */
+/* -------------------------------------- */
+
+.utility-header {
+    height: var(--utility-height);
+    background-color: white;
+    border-bottom: 1px solid var(--color-border-light);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    /* Default position is static/relative on desktop */
+}
+
+.utility-inner {
+    max-width: var(--max-content-width);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    height: var(--utility-height);
+}
+
+.global-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-text-light);
+    cursor: pointer;
+}
+
+.global-dropdown i {
+    font-size: 12px;
+}
+
+.talk-sales {
+    color: var(--color-text-light);
+    margin-right: 10px;
+}
+
+/* -------------------------------------- */
+/* Main Header Styles (Logo & Login) */
+/* -------------------------------------- */
+
+.main-header {
+    height: var(--header-height);
+    background-color: white;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.header-inner {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 24px;
+    width: auto;
+}
+
+
+.btn-login {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* -------------------------------------- */
+/* Main Content Layout (Full-Bleed Fix) */
+/* -------------------------------------- */
+
+.signup-page {
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.signup-content-container {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+}
+
+.signup-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Uses both header heights for desktop min-height calculation */
+    min-height: calc(100vh - var(--header-height) - var(--utility-height));
+    padding: 0 5%;
+    position: relative;
+}
+
+/* Pseudo-element for full-bleed right background */
+.signup-grid-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: -50vw;
+    background-color: var(--right-panel-bg);
+    z-index: -1;
+}
+
+
+/* -------------------------------------- */
+/* Left Panel (Form) */
+/* -------------------------------------- */
+
+.signup-panel-left {
+    padding: 50px 80px 50px 0;
+    max-width: 500px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.form-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.form-subtitle {
+    font-size: 1rem;
+    color: var(--color-text-light);
+    margin-bottom: 30px;
+}
+
+.signup-form {
+    margin-bottom: 30px;
+}
+
+.email-input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.email-input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+.btn-primary-full {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary-full:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.separator {
+    text-align: center;
+    color: var(--color-text-light);
+    font-size: 14px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.separator::before {
+    left: 0;
+}
+
+.separator::after {
+    right: 0;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: var(--color-white);
+    color: var(--color-text-dark);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.social-google {
+    background-color: #fff;
+    border-color: #e0e0e0;
+}
+
+.social-google:hover {
+    background-color: #fafafa;
+}
+
+.social-microsoft {
+    background-color: #fff;
+    border-color: #e0e0e0;
+}
+
+.social-microsoft:hover {
+    background-color: #fafafa;
+}
+
+.social-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.fa-google {
+    color: #db4437;
+}
+
+.fa-microsoft {
+    color: #00a4ef;
+}
+
+.connect-prompt {
+    font-size: 13px;
+    color: var(--color-text-light);
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.login-prompt {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login-link i {
+    font-size: 0.9rem;
+    transition: transform 0.2s;
+}
+
+.login-link:hover i {
+    transform: translateX(3px);
+}
+
+/* -------------------------------------- */
+/* Right Panel (Features) */
+/* -------------------------------------- */
+
+.signup-panel-right {
+    padding: 50px 0 50px 80px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.tag-teams {
+    display: inline-block;
+    background-color: #e6f7ff;
+    color: var(--color-primary);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.features-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 25px;
+    line-height: 1.3;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.features-list li {
+    font-size: 1rem;
+    color: var(--color-feature-text);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.check-icon {
+    color: var(--color-success);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.leading-companies-text {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #a0a0a0;
+}
+
+/* -------------------------------------- */
+/* Chat Button */
+/* -------------------------------------- */
+
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-primary);
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 500;
+}
+
+/* -------------------------------------- */
+/* Responsive Design */
+/* -------------------------------------- */
+
+@media (max-width: 992px) {
+    .utility-header {
+        /* FIX: Re-enable utility header (static by default) */
+        display: flex;
+        padding-right: 20px;
+        /* Adjust padding for mobile layout */
+    }
+
+    .main-header {
+        border-bottom: 1px solid var(--color-border-light);
+
+        /* Main Header is FIXED */
+        position: fixed;
+        /* Start position is below the utility header */
+        top: var(--utility-height);
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    /* NEW: Add padding to the content container to account for *both* fixed headers */
+    .signup-page {
+        padding-top: calc(var(--header-height) + var(--utility-height));
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .signup-grid-wrapper {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 0 5%;
+    }
+
+    .signup-grid-wrapper::after {
+        content: none;
+    }
+
+    /* Left panel (Form) now appears first */
+    .signup-panel-left {
+        padding: 40px 0 20px 0;
+        max-width: 100%;
+    }
+
+    /* Right panel (Features) now appears second */
+    .signup-panel-right {
+        background-color: var(--right-panel-bg);
+        padding: 40px;
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        height: 60px;
+        top: var(--utility-height);
+        /* Ensure it stays below the 40px utility bar */
+    }
+
+    .header-inner {
+        padding: 0 20px;
+    }
+
+    .talk-sales {
+        display: none;
+    }
+
+    .form-title {
+        font-size: 1.8rem;
+    }
+
+    .signup-panel-right {
+        padding: 25px 20px;
+        margin-bottom: 15px;
+    }
+
+    .signup-panel-left {
+        padding: 25px 20px 15px 20px;
+    }
+
+    /* Adjusted padding for smaller fixed header */
+    .signup-page {
+        /* 40px (utility) + 60px (main header) = 100px */
+        padding-top: calc(var(--utility-height) + 60px);
+    }
+}

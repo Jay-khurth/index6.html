@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendly Pricing Page</title>
+    <link rel="stylesheet" href="index5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="mobile-menu" hidden>
+
+    <div class="global-bar">
+        <div class="global-left">
+            <div class="global-dropdown">
+                <span><i class="fas fa-globe"></i> English</span>
+                <i class="fas fa-caret-down global-arrow"></i>
+                <ul class="global-menu">
+                    <li><a href="#">Global ▾</a></li>
+                    <li><a href="#">United States</a></li>
+                    <li><a href="#">United Kingdom</a></li>
+                    <li><a href="#">Canada</a></li>
+                    <li><a href="#">Australia</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="global-right">
+            <a href="#" class="talk-sales">Talk to sales</a>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <img src="/img/logo.png.svg" alt="Calendly Logo">
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+
+                    <li class="nav-item dropdown">
+                        <a href="#">Product <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-menu product-menu two-col">
+                            <div class="col">
+                                <h4 class="h4-product">Product</h4>
+                                <a href="#">Features</a>
+                                <a href="#">Pricing</a>
+                                <a href="#">Security</a>
+                                <a href="#">Customer Stories</a>
+                            </div>
+                            <div class="col">
+                                <h4 class="h4-platform">Platform</h4>
+                                <a href="#">Integrations</a>
+                                <a href="#">Developers</a>
+                                <a href="#">Mobile Apps</a>
+                            </div>
+                            <div class="shape-blob shape-product-1"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#">Solutions <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-menu solution-menu three-col">
+                            <div class="col">
+                                <h4 class="h4-size">By Business Size</h4>
+                                <a href="#">Small Business</a>
+                                <a href="#">Mid-Market</a>
+                                <a href="#">Enterprise</a>
+                            </div>
+                            <div class="col">
+                                <h4 class="h4-industry">By Industry</h4>
+                                <a href="#">Technology</a>
+                                <a href="#">Financial Services</a>
+                                <a href="#">Higher Education</a>
+                                <a href="#">Recruiting</a>
+                            </div>
+                            <div class="col">
+                                <h4 class="h4-team">By Team</h4>
+                                <a href="#">Sales</a>
+                                <a href="#">Marketing</a>
+                                <a href="#">Customer Success</a>
+                                <a href="#">Operations</a>
+                            </div>
+                            <div class="shape-blob shape-solution-1"></div>
+                            <div class="shape-blob shape-solution-2"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#">Resources <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-menu resource-menu two-col">
+                            <div class="col">
+                                <h4 class="h4-explore">Explore</h4>
+                                <a href="#">Blog</a>
+                                <a href="#">Help Center</a>
+                                <a href="#">Tools</a>
+                                <a href="#">API Documentation</a>
+                            </div>
+                            <div class="col">
+                                <h4 class="h4-learn">Learn & Connect</h4>
+                                <a href="#">Video Tutorials</a>
+                                <a href="#">Community</a>
+                                <a href="#">Webinars</a>
+                            </div>
+                            <div class="shape-blob shape-resource-1"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item"><a href="#">Pricing</a></li>
+                </ul>
+            </nav>
+
+            <div class="actions">
+                <a href="/index3.html" class="login">Log In</a>
+                <a href="/index2.html" class="btn-primary">Get started</a>
+
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li class="divider"></li>
+            <li><a href="#" class="login">Log In</a></li>
+            <li><a href="#" class="btn-primary">Get started</a></li>
+        </ul>
+    </div>
+
+    <main class="calendly-pricing-page">
+
+        <section class="pricing-hero-section">
+            <h1>Pick the perfect plan for your team</h1>
+
+            <div class="billing-toggle">
+                <label>
+                    <input type="radio" name="billing" value="yearly" checked>
+                    Billed yearly
+                </label>
+                <label>
+                    <input type="radio" name="billing" value="monthly">
+                    Billed monthly
+                </label>
+            </div>
+        </section>
+
+        <section class="pricing-cards-section">
+            <div class="pricing-card-grid">
+
+                <div class="card free">
+                    <h2>Free</h2>
+                    <p class="for-who">For personal use</p>
+                    <div class="price-box">
+                        <span class="price-large">Always free</span>
+                    </div>
+                    <a href="#" class="btn btn-dark">Get started</a>
+                    <div class="features-summary">
+                        <h3>Free features:</h3>
+                        <h4 class="category-heading">Scheduling</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 1 event type</li>
+                            <li><i class="fas fa-check"></i> Connect 1 calendar</li>
+                            <li><i class="fas fa-check"></i> Customize availability</li>
+                            <li><i class="fas fa-check"></i> Add video conferencing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card standard">
+                    <h2>Standard</h2>
+                    <p class="for-who">For professionals and small teams</p>
+                    <div class="price-box">
+                        <span class="price-large">$10</span>
+                        <span class="per-user">/seat /mo</span>
+                        <span class="save-tag">Save 16%</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">Try for free</a>
+                    <div class="features-summary">
+                        <h3>Free features, plus:</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Unlimited event types</li>
+                            <li><i class="fas fa-check"></i> Connect multiple calendars</li>
+                            <li><i class="fas fa-check"></i> Connect Hubspot, Mailchimp</li>
+                            <li><i class="fas fa-check"></i> Connect Stripe, Paypal</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card teams recommended">
+                    <div class="recommended-tag">Recommended plan</div>
+                    <h2>Teams</h2>
+                    <p class="for-who">For growing businesses</p>
+                    <div class="price-box">
+                        <span class="price-large">$16</span>
+                        <span class="per-user">/seat /mo</span>
+                        <span class="save-tag">Save 20%</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">Try for free</a>
+                    <div class="features-summary">
+                        <h3>Standard features, plus:</h3>
+                        <h4 class="category-heading">Scheduling</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Send meetings to Salesforce</li>
+                            <li><i class="fas fa-check"></i> Share Round-robin meetings</li>
+                            <li><i class="fas fa-check"></i> Qualify & route leads</li>
+                            <li><i class="fas fa-check"></i> Connect Hubspot, Marketo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card enterprise">
+                    <h2>Enterprise</h2>
+                    <p class="for-who">For large companies</p>
+                    <div class="price-box">
+                        <span class="price-large starts-at">Starts at </span>
+                        <span class="price-large">$15k<span class="per-year">/yr</span></span>
+                    </div>
+                    <a href="#" class="btn btn-primary">Contact sales</a>
+                    <div class="features-summary">
+                        <h3>Teams features, plus:</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Route with Salesforce lookup</li>
+                            <li><i class="fas fa-check"></i> Connect Microsoft Dynamics</li>
+                            <li><i class="fas fa-check"></i> Dedicated account support</li>
+                            <li><i class="fas fa-check"></i> Security</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <h2 class="comparison-title">Compare features</h2>
+
+            <div class="comparison-table-wrapper">
+                <div class="comparison-table">
+                    <div class="table-header">
+                        <div class="feature-column-header"></div>
+                        <div class="plan-column-header">
+                            Free <span class="always-free">Always free</span>
+                            <a href="#" class="btn btn-dark btn-small">Get started</a>
+                        </div>
+                        <div class="plan-column-header">
+                            Standard <span class="price-subtext">$10 /seat /mo</span>
+                            <a href="#" class="btn btn-primary btn-small">Try for free</a>
+                        </div>
+                        <div class="plan-column-header">
+                            Teams <span class="price-subtext">$16 /seat /mo</span>
+                            <a href="#" class="btn btn-primary btn-small">Try for free</a>
+                        </div>
+                        <div class="plan-column-header">
+                            Enterprise <span class="price-subtext">Contact us</span>
+                            <a href="#" class="btn btn-primary btn-small">Contact sales</a>
+                        </div>
+                    </div>
+                    <div class="category-row">
+                        <h3>Scheduling</h3>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">One-on-one meeting types</div>
+                        <div class="feature-value">1</div>
+                        <div class="feature-value">Unlimited</div>
+                        <div class="feature-value">Unlimited</div>
+                        <div class="feature-value">Unlimited</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Connect calendars</div>
+                        <div class="feature-value">1</div>
+                        <div class="feature-value">6</div>
+                        <div class="feature-value">6</div>
+                        <div class="feature-value">6</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Unlimited meetings</div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Customize your booking link</div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Mobile app & browser extension</div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Meeting polls and one-off meetings</div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+
+                    <div class="category-row">
+                        <h3>Integrations</h3>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Google, Microsoft Teams, Outlook, and Office 365 calendar integrations
+                        </div>
+                        <div class="feature-value">1</div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Zoom, Google Meet, Microsoft Teams and other video conferencing tools
+                        </div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Custom webhooks to access Calendly meeting information in real-time
+                        </div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Access Calendly's Scheduling API</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Stripe and PayPal for payment collection</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">HubSpot, Mailchimp, and Zapier for automations</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+
+                    <div class="category-row">
+                        <h3>Personalizations</h3>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Custom branding on booking page</div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Option to remove Calendly branding</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Customize colors when you add Calendly to your website</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Customize your meeting confirmation pages with preferred links</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+
+                    <div class="category-row">
+                        <h3>Admin tools</h3>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Team scheduling analytics and insights</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Enforce consistent branding for your organization</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Organize teams into groups and assign admins</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Create admin-managed events and assign them to your team for
+                            consistency</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+
+                    <div class="category-row">
+                        <h3>Security and control</h3>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Data deletion for compliance</div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Data Deletion API</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">SAML Single Sign-On (SSO)</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value">Add-on</div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Automate user provisioning via SCIM</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Automate group provisioning</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Domain control and account oversight</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Security and legal reviews</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+
+                    <div class="category-row">
+                        <h3>Business Support</h3>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Help center and Calendly community access</div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">24/7 Email support</div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">24/7 Chat support</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Phone support</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Dedicated account support</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Dedicated account onboarding and implementation</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-name">Personalized account milestones and success metrics</div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"></div>
+                        <div class="feature-value"><i class="fas fa-check"></i></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-inner">
+            <div class="footer-cta-wrapper">
+                <div class="footer-cta-text">
+                    <h2>Easy access for easy bookings</h2>
+                    <p>Share your Calendly link right from your browser, so you can schedule meetings without the
+                        back-and-forth</p>
+                </div>
+                <div class="footer-buttons-cta">
+                    <a href="#" class="btn btn-primary btn-cta">Sign up for free</a>
+                    <a href="#" class="btn btn-outline btn-cta">Get a demo</a>
+                </div>
+            </div>
+
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Scheduling automation</a></li>
+                        <li><a href="#">Meeting Notetaker <span class="beta-tag">Beta</span></a></li>
+                        <li><a href="#">Customizable availability</a></li>
+                        <li><a href="#">Mobile apps</a></li>
+                        <li><a href="#">Browser extensions</a></li>
+                        <li><a href="#">Meeting routing</a></li>
+                        <li><a href="#">Event Types</a></li>
+                        <li><a href="#">Email & website embeds</a></li>
+                        <li><a href="#">Reminders & follow-ups</a></li>
+                        <li><a href="#">Meeting polls</a></li>
+                        <li><a href="#">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Integrations</h4>
+                    <ul>
+                        <li><a href="#">Google ecosystem</a></li>
+                        <li><a href="#">Microsoft ecosystem</a></li>
+                        <li><a href="#">Calendars</a></li>
+                        <li><a href="#">Video conferencing</a></li>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Sales & CRM</a></li>
+                        <li><a href="#">Recruiting & ATS</a></li>
+                        <li><a href="#">Email messaging</a></li>
+                        <li><a href="#">Embed Calendly</a></li>
+                        <li><a href="#">Analytics</a></li>
+                        <li><a href="#">API & connectors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Calendly</h4>
+                    <ul>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Product overview</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">For individuals</a></li>
+                        <li><a href="#">For small businesses</a></li>
+                        <li><a href="#">For large companies</a></li>
+                        <li><a href="#">Compare</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Sign up for free</a></li>
+                        <li><a href="#">Talk to sales</a></li>
+                        <li><a href="#">Get a demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Help center</a></li>
+                        <li><a href="#">Resource center</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Customer stories</a></li>
+                        <li><a href="#">Calendly community</a></li>
+                        <li><a href="#">Developer tools</a></li>
+                        <li><a href="#">Release notes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Careers <span class="hiring-tag">We're hiring!</span></a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Become a partner</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom-section">
+            <div class="footer-bottom-inner">
+                <div class="downloads-and-social">
+                    <div class="downloads-section">
+                        <h4>Downloads</h4>
+                        <div class="download-buttons">
+                            <a href="#" class="download-btn"><i class="fab fa-apple"></i> App Store</a>
+                            <a href="#" class="download-btn"><i class="fab fa-google-play"></i> Google Play</a>
+                            <a href="#" class="download-btn"><i class="fab fa-chrome"></i> Chrome extension</a>
+                            <a href="#" class="download-btn"><i class="fab fa-edge"></i> Edge extension</a>
+                            <a href="#" class="download-btn"><i class="fab fa-firefox"></i> Firefox extension</a>
+                            <a href="#" class="download-btn"><i class="fab fa-safari"></i> Safari extension</a>
+                            <a href="#" class="download-btn"><i class="fas fa-envelope"></i> Outlook add-in</a>
+                        </div>
+                    </div>
+
+                    <div class="social-media-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="legal-bar">
+                    <div class="language-selector">
+                        <i class="fas fa-globe"></i> English
+                        <i class="fas fa-chevron-down language-arrow"></i>
+                    </div>
+                    <div class="legal-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Legal</a>
+                        <a href="#">Status</a>
+                        <a href="#">Cookie Settings</a>
+                        <a href="#"><i class="fas fa-check-circle"></i> Your Privacy Choices</a>
+                        <span class="copyright-text">Copyright Calendly 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="fixed-chat-button" aria-label="Questions about plans or pricing? Click here">
+        <div class="chat-popover">
+            Questions about plans <br>or pricing? Click here
+        </div>
+        <i class="fas fa-comment-dots"></i>
+    </a>
+</body>
+
+</html>
